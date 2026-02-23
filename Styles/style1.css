@@ -42,11 +42,11 @@ body {
 }
 
 h9 {
-    float: right;
-    font-size: 0.9em;
-    cursor: pointer;
-	texte-align : center;
- padding: 15px;
+  float: right;
+  font-size: 0.9em;
+  cursor: pointer;
+	text-align : center;
+  padding: 15px;
   background-color: #f9f9f9;
   border-left: 1px solid #a2a9b1;
 }
