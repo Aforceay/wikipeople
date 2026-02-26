@@ -59,13 +59,31 @@
     <button onclick="ouvrir()" class="but">Contact</button>
 
     <div id="popup" class="modal">
-    <div class="modal-content">
-        <p>Vous pouvez nous contacter par:
-            adresse mail: gleb.shevtsov9012@gmail.com
-
-        </p>
-        <button onclick="closeModal()" class="but">Fermer</button>
+      <div class="modal-content">
+          <p>Vous pouvez nous contacter par: message livr2 par pigeon</p>
+          <button onclick="fermer()" class="but">Fermer</button>
+      </div>
     </div>
+
+    <button onclick="ouvrir2()" class="but">infromations</button>
+
+    <div id="popup2" class="modal">
+      <div class="modal-content">
+          <p> </p>
+          <button onclick="fermer2()" class="but">Fermer</button>
+      </div>
+    </div>
+
+    <button onclick="ouvrir3()" class="but">recent changes</button>
+
+    <div id="popup3" class="modal">
+      <div class="modal-content">
+          <p>Vous pouvez nous contacter par:
+              adresse mail: gleb.shevtsov9012@gmail.com
+
+          </p>
+          <button onclick="fermer3()" class="but">Fermer</button>
+      </div>
     </div>
 
 <script>
@@ -76,6 +94,24 @@ function ouvrir() {
 function fermer() {
   document.getElementById("popup").classList.remove("show");
 }
+
+function ouvrir2() {
+  document.getElementById("popup2").classList.add("show");
+}
+
+function fermer2() {
+  document.getElementById("popup2").classList.remove("show");
+}
+
+function ouvrir3() {
+  document.getElementById("popup3").classList.add("show");
+}
+
+function fermer3() {
+  document.getElementById("popup3").classList.remove("show");
+}
+
+
 </script>
 </body>
 </html> 
