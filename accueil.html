@@ -48,43 +48,72 @@
       cursor: pointer;
       font-size: 13px;
     }
-    
+    .but1 {
+      background-color: rgb(68, 161, 148);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .but:hover {
+      background-color: rgb(52, 119, 110);
+      padding: 13px 23px;
+      font-size: 17px;
+    }
+
+    .boutons {
+      position: absolute;
+      display: flex;
+      gap: 30px;
+      margin-top: -139px;
+      margin-left: 20px;
+    }
+    .gleb{
+      height: 360px;
+      width: 240px;
+
+    }
 
 </style>
 <body >
     <div style="font-size: 130px; font-weight: 130px; max-width: fit-content; margin-left: auto; margin-right: auto; color: #EC8F8D;">wikipeople</div>
+    <div class="boutons">
+      <button onclick="ouvrir()" class="but">Contact</button>
+
+      <div id="popup" class="modal">
+        <div class="modal-content">
+            <p>messagerie pigeon</p>
+            <button onclick="fermer()" class="but1">Fermer</button>
+        </div>
+      </div>
+
+      <button onclick="ouvrir2()" class="but">infromations</button>
+
+      <div id="popup2" class="modal">
+        <div class="modal-content">
+            <p>Jsp faut inventer des trucs mdr</p>
+            <button onclick="fermer2()" class="but1">Fermer</button>
+        </div>
+      </div>
+
+      <button onclick="ouvrir3()" class="but">recent changes</button>
+
+      <div id="popup3" class="modal">
+        <div class="modal-content">
+            <p>Reussir a placer les commits ici</p>
+            <button onclick="fermer3()" class="but1">Fermer</button>
+        </div>
+      </div>
+    </div>
     <p class="text">Wikipeople est une plateforme collaborative dédiée à la création de d'une base de donné pour les personnes de notre entourage. Sur Wikipeople, vous pouvez trouver des biographies couvrant une variété de domaines. Chaque biographie est rédigée par des contributeurs passionnés qui s'efforcent de fournir des informations fiables et vérifiables.</p>
+  
+  <div class="heads">
+    <a href="Gleb.html"><img src="Image/Gleb.png" class="gleb"></a>
+  </div>
     
     
-    <button onclick="ouvrir()" class="but">Contact</button>
-
-    <div id="popup" class="modal">
-      <div class="modal-content">
-          <p>Vous pouvez nous contacter par: message livr2 par pigeon</p>
-          <button onclick="fermer()" class="but">Fermer</button>
-      </div>
-    </div>
-
-    <button onclick="ouvrir2()" class="but">infromations</button>
-
-    <div id="popup2" class="modal">
-      <div class="modal-content">
-          <p> </p>
-          <button onclick="fermer2()" class="but">Fermer</button>
-      </div>
-    </div>
-
-    <button onclick="ouvrir3()" class="but">recent changes</button>
-
-    <div id="popup3" class="modal">
-      <div class="modal-content">
-          <p>Vous pouvez nous contacter par:
-              adresse mail: gleb.shevtsov9012@gmail.com
-
-          </p>
-          <button onclick="fermer3()" class="but">Fermer</button>
-      </div>
-    </div>
 
 <script>
 function ouvrir() {
