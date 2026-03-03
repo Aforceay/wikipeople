@@ -70,15 +70,22 @@
       margin-top: -139px;
       margin-left: 20px;
     }
-    .gleb{
-      height: 360px;
-      width: 240px;
-      transition: transform 100s linear;
-    }
-    .gleb:hover {
-      transform: scale(1.1) rotate(10000deg);
+  
+    .gleb {
+      display: inline-block;   /* THIS makes scaling work */
     }
 
+    .gleb img {
+      transition: transform 100s linear;
+    }
+
+    .gleb:hover img {
+      transform: rotate(10000deg);
+    }
+
+    .gleb:hover {
+      transform: scale(1.2);
+    }
 </style>
 <body >
     <div style="font-size: 130px; font-weight: 130px; max-width: fit-content; margin-left: auto; margin-right: auto; color: #EC8F8D;">wikipeople</div>
@@ -113,8 +120,12 @@
     <p class="text">Wikipeople est une plateforme collaborative dédiée à la création de d'une base de donné pour les personnes de notre entourage. Sur Wikipeople, vous pouvez trouver des biographies couvrant une variété de domaines. Chaque biographie est rédigée par des contributeurs passionnés qui s'efforcent de fournir des informations fiables et vérifiables.</p>
   
   <div class="heads">
-    <a href="Gleb.html"><img src="Image/Gleb.png" class="gleb"></a>
-    <a href="titouan.html" style="margin-left: 180px;"><img src="Image/Gleb4.png" class="gleb"></a>
+    <a href="Gleb.html" class="gleb">
+      <img src="Image/gleb7.png" style="margin-left: 90px; margin-bottom: 100px;">
+    </a>
+    <a href="titouan.html" class="gleb">
+      <img src="Image/titouan4.png" style="margin-left: 90px;">
+    </a>  
   </div>
     
     
