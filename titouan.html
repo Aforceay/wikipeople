@@ -21,10 +21,14 @@
     }
 
     .modal-content {
-      background: white;
+      background: rgba(255, 255, 255, 0.151);
       padding: 20px;
       border-radius: 8px;
       min-width: 300px;
+    }
+
+    .show {
+      display: flex;
     }
 </style>
 <body>
@@ -85,23 +89,57 @@
 
       <div id="popup" class="modal">
         <div class="modal-content">
-            <img src="Image/"
+          <div onclick="if(event.target === this) this.style.display='none'" style="
+              position: fixed;
+              inset: 0;
+              background: rgba(0,0,0,0.6);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 9999;
+          ">
+
+              <div style="
+                  background: white;
+                  padding: 20px;
+                  border-radius: 12px;
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 10px;
+                  width: 95%;
+                  max-width: 700px;
+                  box-sizing: border-box;
+              ">
+
+                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
+                      <img src="Image/titouan6.jpg" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
+                      <img src="Image/titouan7.jpg" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
+                      <img src="Image/titouan10.png" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
+                      <img src="Image/titouan11.png" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
+                      <img src="Image/titouan12.png" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div style="width:100%; aspect-ratio:1/1;"></div>
+
+              </div>
+          </div>
             <button onclick="fermer()">Fermer</button>
         </div>
       </div>  
 
-	<p>
-Il mange même des pommes en cour de NSI ce petit saltimbanque...
-	</p>
-	<img src="Image/Gleb6.jpg" width=350px/>
-	<p>
-et des arbouses en sortie vélo !
-	</p>
-<br>
 
-<img src="Image/Gleb2.jpg" width=240px/>
-
-<br>
 
 <hr>
 
