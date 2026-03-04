@@ -7,7 +7,27 @@
 		<link rel="stylesheet"  href="Styles/style1.css">
 		
 </head>
-<body">
+<style>
+  .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(54, 194, 101, 0.466);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      min-width: 300px;
+    }
+</style>
+<body>
 
 
 <header class="header">
@@ -59,10 +79,17 @@
 </ul>
 
 
-      <h2>Les fruits</h2>
-      <p>
-Gleb aime les fruits. Il sait couper une pomme en deux à la seule force de ses avant-bras depuis Janvier 2026.
-	</p>
+      <h2>Interessant</h2>
+      <p>Titouan aime dormir</p>
+      <button onclick="dormir()">preuve</button>
+
+      <div id="popup" class="modal">
+        <div class="modal-content">
+            <img src="Image/"
+            <button onclick="fermer()">Fermer</button>
+        </div>
+      </div>  
+
 	<p>
 Il mange même des pommes en cour de NSI ce petit saltimbanque...
 	</p>
@@ -93,5 +120,20 @@ et des arbouses en sortie vélo !
   <h3>Annexes</h3>
     <img src="Image/titouan2.png"/ width="500px">
 <img style="margin-top: 450px;margin-left: 60px;" src="Image/titouan3.png" width="350px">
+
+
 </body >
+
+
+<script>
+
+function dormir() {
+  document.getElementById("popup").classList.add("show");
+}
+
+function fermer() {
+  document.getElementById("popup").classList.remove("show");
+}
+
+</script>
 

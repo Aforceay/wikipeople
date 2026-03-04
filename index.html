@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+
 <style>
     body{
         background-color: #F4F0E4;
@@ -17,6 +19,21 @@
         color: rgb(68, 161, 148);
     }
 
+    .titt{
+      font-size: 160px; 
+      font-weight: 160px; 
+      max-width: fit-content; 
+      margin-left: auto; 
+      margin-right: auto; 
+      color: #EC8F8D;
+      margin-top: 170px;
+      margin-bottom: 80px;
+      border: solid #d47e7c 11px;
+      border-radius: 5%;
+      padding: 20px;
+      background-color: #f19f9d4d;
+    }
+
     .modal {
       display: none;
       position: fixed;
@@ -24,7 +41,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.5);
+      background: rgba(54, 194, 101, 0.466);
       justify-content: center;
       align-items: center;
     }
@@ -40,36 +57,29 @@
       display: flex;
     }
     .but {
-      background-color: rgb(68, 161, 148);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 13px;
-    }
-    .but1 {
-      background-color: rgb(68, 161, 148);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 13px;
-    }
-    .but:hover {
-      background-color: rgb(52, 119, 110);
-      padding: 13px 23px;
-      font-size: 17px;
-    }
+    background-color: rgb(68, 161, 148);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s ease;  /* smooth animation */
+  }
+
+  .but:hover {
+    background-color: rgb(52, 119, 110);
+    transform: scale(1.1);  /* grows visually without affecting layout */
+  }
 
     .boutons {
-      position: absolute;
-      display: flex;
-      gap: 30px;
-      margin-top: -139px;
-      margin-left: 20px;
-    }
+    position: absolute;
+    display: flex;
+    flex-direction: column;   /* THIS makes them vertical */
+    gap: 15px;
+    margin-top: -139px;
+    margin-left: 20px;
+  }
   
     .gleb {
       display: inline-block;   /* THIS makes scaling work */
@@ -87,15 +97,19 @@
       transform: scale(1.2);
     }
 </style>
+
+
 <body >
-    <div style="font-size: 130px; font-weight: 130px; max-width: fit-content; margin-left: auto; margin-right: auto; color: #EC8F8D;">wikipeople</div>
+    <div class="titt">wikipeople</div>
+    
+    
     <div class="boutons">
       <button onclick="ouvrir()" class="but">Contact</button>
 
       <div id="popup" class="modal">
         <div class="modal-content">
             <p>messagerie pigeon</p>
-            <button onclick="fermer()" class="but1">Fermer</button>
+            <button onclick="fermer()" class="but">Fermer</button>
         </div>
       </div>
 
@@ -104,7 +118,7 @@
       <div id="popup2" class="modal">
         <div class="modal-content">
             <p>Jsp faut inventer des trucs mdr</p>
-            <button onclick="fermer2()" class="but1">Fermer</button>
+            <button onclick="fermer2()" class="but">Fermer</button>
         </div>
       </div>
 
@@ -113,10 +127,14 @@
       <div id="popup3" class="modal">
         <div class="modal-content">
             <p>Reussir a placer les commits ici</p>
-            <button onclick="fermer3()" class="but1">Fermer</button>
+            <button onclick="fermer3()" class="but">Fermer</button>
         </div>
       </div>
+    
+    
     </div>
+    
+    
     <p class="text">Wikipeople est une plateforme collaborative dédiée à la création de d'une base de donné pour les personnes de notre entourage. Sur Wikipeople, vous pouvez trouver des biographies couvrant une variété de domaines. Chaque biographie est rédigée par des contributeurs passionnés qui s'efforcent de fournir des informations fiables et vérifiables.</p>
   
   <div class="heads">
@@ -127,10 +145,18 @@
       <img src="Image/titouan4.png" style="margin-left: 90px;">
     </a>  
   </div>
-    
-    
+
+
+  <img src="Image/titouan8.png" style="position: absolute; margin-left: 1100px; margin-top:-1375px;scale: 0.7; ">
+  <img src="Image/titouan9.png" style="scale: 0.6;"
+
+</body>
+
+
+
 
 <script>
+
 function ouvrir() {
   document.getElementById("popup").classList.add("show");
 }
@@ -157,7 +183,6 @@ function fermer3() {
 
 
 </script>
-</body>
 </html> 
 
 <!--
