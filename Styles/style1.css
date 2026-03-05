@@ -1,3 +1,5 @@
+
+
 h1
 	{color : #000000;
 	font-size : 200%;
@@ -12,10 +14,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;>
-
+  background-attachment: fixed;
+  margin: 0;
+  
 }
-
 .top-bar {
     top: 0;
     width: 100%;
@@ -130,3 +132,38 @@ h4
 .som{
   position: fixed
 }
+
+.titi{
+  max-height: 320px;
+  width: auto;
+  animation: veloo 9s linear infinite;
+  position: absolute;
+  top: 1640px;
+}
+
+@keyframes veloo {
+    0% {
+      left: -120px;
+      transform: scaleX(-1);
+    }
+
+    49% {
+      left: calc(100vw - 120px);
+      transform: scaleX(-1);
+    }
+
+    50% {
+      left: calc(100vw - 120px);
+      transform: scaleX(1);
+    }
+
+    99% {
+      left: -120px;
+      transform: scaleX(1);
+    }
+
+    100% {
+      left: -120px;
+      transform: scaleX(-1);
+    }
+  }
