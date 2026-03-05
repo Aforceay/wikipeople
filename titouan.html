@@ -8,6 +8,7 @@
 		
 </head>
 <style>
+  
   .modal {
       display: none;
       position: fixed;
@@ -15,21 +16,58 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(54, 194, 101, 0.466);
+      background: rgba(235, 238, 57, 0.466);
       justify-content: center;
       align-items: center;
     }
 
     .modal-content {
-      background: rgba(255, 255, 255, 0.151);
+      background: rgb(255, 255, 255);
       padding: 20px;
       border-radius: 8px;
-      min-width: 300px;
+      width: fit-content;
+      height: 700px;
+    }
+    .but {
+      background-color: rgb(68, 161, 148);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: 0.2s ease; 
     }
 
     .show {
       display: flex;
     }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #ccd81ecc;
+      color: #b3be1b;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 50px;
+      margin-left: 30px;
+      position: fixed;
+      }
+
+    .but:hover {
+      background-color: rgb(52, 119, 110);
+      transform: scale(1.1); 
+    }
+
+  .btn:hover {
+    background: #b3be1b;
+    scale: 1.2;
+  }
+  img{
+    border-radius: 8px;
+  }
 </style>
 <body>
 
@@ -42,16 +80,9 @@
   <div class="container">
 
     <!-- Menu latéral -->
-    <nav class="sidebar" style="width: 281px;">
+    <nav class="sidebar" style="width: 281px; top: 0px;">
       
-      <div class="som" style="height: 400px; width: 251px;">
-        <h3 class="ggg">Sommaire</h3>
-        <ul>
-          <li><a href="#">Introduction</a></li>
-          <li><a href="#">Histoire</a></li>
-          <li><a href="#">Références</a></li>
-        </ul>
-      </div>
+      <a href="index.html" class="btn">Accueil</a>
     </nav>
 
     <!-- Contenu principal -->
@@ -85,58 +116,17 @@
 
       <h2>Interessant</h2>
       <p>Titouan aime dormir</p>
-      <button onclick="dormir()">preuve</button>
+      <button onclick="dormir()" class="but">preuve</button>
 
       <div id="popup" class="modal">
-        <div class="modal-content">
-          <div onclick="if(event.target === this) this.style.display='none'" style="
-              position: fixed;
-              inset: 0;
-              background: rgba(0,0,0,0.6);
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              z-index: 9999;
-          ">
-
-              <div style="
-                  background: white;
-                  padding: 20px;
-                  border-radius: 12px;
-                  display: grid;
-                  grid-template-columns: repeat(2, 1fr);
-                  gap: 10px;
-                  width: 95%;
-                  max-width: 700px;
-                  box-sizing: border-box;
-              ">
-
-                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
-                      <img src="Image/titouan6.jpg" style="width:100%; height:100%; object-fit:cover;">
-                  </div>
-
-                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
-                      <img src="Image/titouan7.jpg" style="width:100%; height:100%; object-fit:cover;">
-                  </div>
-
-                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
-                      <img src="Image/titouan10.png" style="width:100%; height:100%; object-fit:cover;">
-                  </div>
-
-                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
-                      <img src="Image/titouan11.png" style="width:100%; height:100%; object-fit:cover;">
-                  </div>
-
-                  <div style="width:100%; aspect-ratio:1/1; overflow:hidden;">
-                      <img src="Image/titouan12.png" style="width:100%; height:100%; object-fit:cover;">
-                  </div>
-
-                  <div style="width:100%; aspect-ratio:1/1;"></div>
-
-              </div>
-          </div>
-            <button onclick="fermer()">Fermer</button>
+        <div class="modal-content" >
+          <img src="Image/titouan6.jpg" style="max-width: 390px; height: auto;">
+          <img src="Image/titouan7.jpg" style="max-width: 400px; height: auto; margin-left: 15px; margin-bottom: 90px;" >
+          <img src="Image/titouan10.png" style="max-width: 400px; height: auto; margin-left: 15px; ">
+          <img src="Image/titouan12.png" style="max-width: 400px; height: auto; margin-left: -405px; margin-bottom: 325px;">
+          <img src="Image/titouan11.png" style="max-width: 400px; height: auto; margin-left: 15px ; margin-bottom: 60px; "  >
         </div>
+        <button onclick="fermer()" style="position: absolute; margin-top: 830px; margin-left: -500px;" class="but">Fermer</button>
       </div>  
 
 
@@ -146,8 +136,9 @@
 <b>Comment le contacter ?</b>
 <ul>
 	<li>Instagram : <a href="https://www.instagram.com/titou_scd/">Instagram</a>
-	<li>Discord : gleb.shv
-	<li>Numéro de téléphone : <a href>+33 7 75 84 40 68</a href>
+	<li>Discord : friedeeeee    
+	<li>Numéro de téléphone : <a href>+67676767676767</a href>
+  <li>Adress: jsp
 </ul>
 <hr>
 
