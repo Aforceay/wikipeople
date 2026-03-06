@@ -75,6 +75,40 @@
   img{
     border-radius: 8px;
   }
+  .titi{
+    max-height: 320px;
+    width: auto;
+    animation: veloo 9s linear infinite;
+    position: absolute;
+    top: 1640px;
+  }
+
+  @keyframes veloo {
+      0% {
+        left: -120px;
+        transform: scaleX(-1);
+      }
+
+      49% {
+        left: calc(100vw - 120px);
+        transform: scaleX(-1);
+      }
+
+      50% {
+        left: calc(100vw - 120px);
+        transform: scaleX(1);
+      }
+
+      99% {
+        left: -120px;
+        transform: scaleX(1);
+      }
+
+      100% {
+        left: -120px;
+        transform: scaleX(-1);
+      }
+    }
 </style>
 <body>
 
